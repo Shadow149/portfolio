@@ -5,12 +5,15 @@
     transition: .4s;
 }
 
-html, body {
+html, body, .site-wrapper {
     height: 100%;
+    overflow: hidden;
+    position: fixed;
 }
 
-body {
+body, .site-wrapper {
     height: 100vh;
+    width: 100%;
     margin: 0rem;
     overflow: hidden; 
     
@@ -20,6 +23,10 @@ body {
     align-items: center;
 
     color: #000;
+}
+
+.site-wrapper {
+    color: inherit;
 }
 
 a {
