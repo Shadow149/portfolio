@@ -1,0 +1,146 @@
+.tabs {
+    flex-grow: 1;
+}
+
+.content {
+    width: 60%;
+    height: 70vh;
+    
+    justify-content: flex-start;
+    overflow: auto;
+    padding: 15vh 15% 15vh 15%;
+}
+
+.card-content {   
+    flex-grow: 5;
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    column-gap: 2em;
+}
+
+.header {
+    flex-grow: 1;
+}
+
+h1 {
+    font-family: Roboto Mono;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 50px;
+    margin-left: 0;
+}
+
+h2 {
+    text-transform: lowercase;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    height: 50px;
+}
+
+ul {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 0;
+}
+
+ul li {
+    list-style-position: inside;
+    font-size: small;
+    margin-bottom: .5em;
+}
+
+.star {
+    list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='.7em' height='.7em' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z' fill='%23ffcf30'/%3E%3C/svg%3E");
+}
+
+.star:before {
+    font-size:120px;
+    vertical-align:middle;
+    line-height:20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.card {
+    border-radius: 40px;
+    background: linear-gradient(0deg, rgba(255,255,255,0.3), rgba(0,0,0,0.2))
+                ,url("");
+
+    box-shadow: 0px 0px 123px 25px rgba(0, 0, 0, 0.5) ;
+
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.card-top {
+    border-radius: 40px;
+    background: url("");
+
+    -webkit-filter: drop-shadow(0px 0px 10px #00000053);
+    filter: drop-shadow(0px 0px 15px #00000053);
+
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+}
+
+.card-wrap {
+    perspective: 800px;
+}
+
+#blob {
+    opacity: 0.05;
+}
+
+
+
+@media (max-width: 1100px) {
+    h1 {
+        font-size: 60px;
+        float: none;
+        text-align: left;
+    }
+}
+
+
+
+@media (max-width: 750px) { 
+    h1 {
+        font-size: 50px;
+    }
+    .card-content {
+        flex-direction: row;
+        row-gap: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        row-gap: 20px;
+    }
+    
+}

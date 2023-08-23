@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+        <link href="../styles/site.css" rel="stylesheet">
+        <link href="../styles/media.css" rel="stylesheet">
+        <link href="../styles/projects.css" rel="stylesheet">
+        <script type="module" src="../javascript/project.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="site-wrapper">
+            <div class="content">
+                <div class="tabs">
+                    <a href="../index.html"> < Back</a>
+                    <a href="">> About</a>
+                    <a href="">> Projects</a>
+                    <a href="">> Resume</a>
+                    <label class="switch">
+                        <input id="nightmode" type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>                  
+                </div>
+                <div class="header">
+                    <h1>Projects.</h1>
+                </div>
+                <div class="card-content">
+                    <div class="card-container">
+                        <a class="card-wrap" href="https://www.github.com/Shadow149/HeronViewer"
+                            target="_blank">
+                            <div class="card" data-img="../assets/heron_bk_1000.png"></div>
+                            <div class="card-top" data-img="../assets/heron_head_1000.png"></div>
+                        </a>
+                        <h2>heron</h2>
+                        <h3>Cross platform OpenGL based, GPU accelerated raw image editor.</h3>
+                        <ul>
+                            <li>C++</li>
+                            <li>OpenGL</li>
+                        </ul>
+                    </div> 
+                    <div class="card-container">
+                        <a class="card-wrap" href="https://gitlab.com/rcj-rescue-tc/erebus/erebus"
+                            target="_blank">
+                            <div class="card" data-img="../assets/erebus_background.png"></div>
+                            <div class="card-top" data-img="../assets/erebus_foreground.png"></div>
+                        </a>
+                        <h2>erebus</h2>
+                        <h3>Simulation competition environment, as part of RoboCupJunior Rescue.</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Webots</li>
+                            <li class="star">Lead developer and project creator</li>
+                            <li class="star">Used by hundreds world-wide</li>
+                        </ul>
+                    </div>
+                    <div class="card-container">
+                        <a class="card-wrap" href=""
+                            target="_blank">
+                            <div class="card" data-img="../assets/lazy_cube_background.png"></div>
+                            <div class="card-top" data-img="../assets/lazy_cube_foreground.png"></div>
+                        </a>
+                        <h2>lazy cube</h2>
+                        <h3>Android rubik's cube scanner and solver.</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Android Studio</li>
+                            <li class="star">University group project runner up</li>
+                            <li class="star">Project lead and manager</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="blob"></div>
+            <div id="blur"></div>
+        </div>
+    </body>
+</html>
