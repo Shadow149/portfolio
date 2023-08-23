@@ -5,13 +5,19 @@ function clamp(value, min, max) {
 let interval = null;
 let iter = 0;
 
-function animate_card(event, card, wrapper, img, lighting = true, multiplier = 1.0) {
+function animate_card(event, card, wrapper, img, lighting = true, multiplier = 1.0, gyro = false) {
     const { clientX, clientY } = event;
 
     let rect = wrapper.getBoundingClientRect();
-    const x = ((rect.right - rect.left) - clientX) + (rect.x - (rect.width / 2));
-    const y = ((rect.bottom - rect.top) - clientY) + (rect.y - (rect.height / 2));
-        
+
+    let x,y;
+    if (!gyro) {
+        x = ((rect.right - rect.left) - clientX) + (rect.x - (rect.width / 2));
+        y = ((rect.bottom - rect.top) - clientY) + (rect.y - (rect.height / 2));
+    } else {
+        x = clientX;
+        y = clientY;
+    }
 
     let rotate_y = clamp(((x * 3.5 * multiplier)/(window.innerWidth * 5)) * 360, -20 * multiplier, 20 * multiplier);
     let rotate_x = clamp(-((y * 3.5 * multiplier)/(window.innerHeight * 5)) * 360, -20 * multiplier, 20 * multiplier);

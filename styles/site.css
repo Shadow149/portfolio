@@ -64,6 +64,8 @@ a {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    padding: 15vh 20% 15vh 20%;
+
 }
 
 .tabs {
