@@ -1,9 +1,7 @@
 * {
     font-family: Roboto Mono;
-
-    -webkit-transition: .4s;
-    transition: .4s;
 }
+
 
 html, body, .site-wrapper {
     height: 100vh;
