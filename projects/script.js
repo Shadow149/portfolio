@@ -1,4 +1,3 @@
-import { update_nightmode } from "../javascript/night_mode.js"
 import { animate_card } from "../javascript/card.js";
 import { animate_blob } from "../javascript/blob.js";
 
@@ -16,9 +15,8 @@ function is_mobile() {
 
 let night_toggle = function(manual = false){ update_nightmode(() => {}, () => {}, manual)};
 
-night_toggle();
-document.getElementById("nightmode").addEventListener("change", function () {
-    night_toggle(true);
+document.getElementById("nightmode").addEventListener("change", function (event) {
+    night_toggle(event.target.checked);
 });
 
 cards = document.getElementsByClassName("card-wrap");
@@ -41,8 +39,8 @@ if (is_mobile()) {
 }
 
 window.onload = function () {
-
     window.onpointermove({clientX: window.innerWidth / 2, clientY: window.innerHeight / 2});
+    night_toggle(Boolean(Number(localStorage.getItem("nightmode"))));
 }
 
 

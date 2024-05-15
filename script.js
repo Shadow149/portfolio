@@ -1,4 +1,3 @@
-import { update_nightmode } from "./javascript/night_mode.js"
 import { animate_blob } from "./javascript/blob.js"
 
 
@@ -23,11 +22,14 @@ let night_toggle = function(manual = false){
     );
 };
 
-night_toggle();
-document.getElementById("nightmode").addEventListener("change", function () {
-    night_toggle(true);
+document.getElementById("nightmode").addEventListener("change", function (event) {
+    night_toggle(event.target.checked);
 });
 
 window.onpointermove = event => {
     animate_blob(event);
+}
+
+window.onload = function () {
+    night_toggle(Boolean(Number(localStorage.getItem("nightmode"))));
 }

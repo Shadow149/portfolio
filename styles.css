@@ -42,13 +42,13 @@ a {
     border-radius: 50%;
     opacity: 0.2;
 }
-  
+
 #blur {
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 2;
-    backdrop-filter: blur(30vmax);
+    backdrop-filter: blur(100px);
 }
 
 .content {
