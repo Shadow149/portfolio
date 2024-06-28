@@ -115,6 +115,33 @@ ul li {
     opacity: 0.05;
 }
 
+.badge {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 15px #00000053);
+    translate: 90% -210%;
+    background-image: url(../assets/badge.svg);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-20deg);
+}
+
+.badge-text {
+    width: 80%;
+    text-align: center;
+    font-family: cursive;
+    line-height: 12px;
+    font-size: 13px;
+    padding: 5px;
+    font-style: italic;
+}
+
 
 
 @media (max-width: 1100px) {
