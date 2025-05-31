@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <title>Alfred Roberts</title>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet">
-        <link href="styles/media.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="javascript/night_mode.js"></script>
-        <script type="module" src="script.js"></script>
-    </head>
-    <body>
-        <script>
-            update_nightmode(() => {}, () => {}, null, true);
-        </script>
-        <div id="site-wrapper" class="site-wrapper">
+<title>Alfred Roberts</title>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="styles/media.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="javascript/night_mode.js"></script>
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <script>
+        update_nightmode(() => { }, () => { }, null, true);
+    </script>
+    <div id="site-wrapper" class="site-wrapper">
         <div class="content">
             <div class="tabs">
                 <a href="">> About</a>
@@ -26,33 +28,48 @@
                 <label class="switch">
                     <input id="nightmode" type="checkbox" checked>
                     <span class="slider"></span>
-                </label>                  
+                </label>
             </div>
             <div class="title_container">
-                <img id="profile_pic" class="profile_pic" src="assets/profile.jpg"/>
+                <img id="profile_pic" class="profile_pic" src="assets/profile.jpg" />
                 <h1>Alfred Roberts</h1>
             </div>
             <div class="about">
                 <p>
-                    Hi! I am a University of Nottingham Computer Science graduate from the UK with interests in 
-                    computer vision.
+                    Hi! I'm currently a graduate computer vision engineer @ Arm, based in Cambridge.
                 </p>
             </div>
             <div class="links">
                 <a href="https://www.github.com/Shadow149" target="_blank">
-                    <svg  height="32"  viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.9734 5.04313e-07C9.66837 -0.00119761 1.73623 6.74747 0.246435 15.9329C-1.24338 25.1184 4.14904 34.0284 12.9774 36.9686C13.9283 37.1397 14.2687 36.5559 14.2687 36.0538C14.2687 35.6031 14.2535 34.4088 14.2477 32.8208C8.97058 33.9619 7.8562 30.2762 7.8562 30.2762C7.50878 29.1295 6.76191 28.1449 5.75104 27.5015C4.03953 26.3243 5.88226 26.351 5.88226 26.351C7.1006 26.5179 8.17292 27.2401 8.78612 28.306C9.30515 29.2498 10.1796 29.9472 11.2151 30.2431C12.2507 30.5392 13.3616 30.4094 14.301 29.8826C14.3893 28.9203 14.8174 28.0209 15.5085 27.3456C11.2982 26.8683 6.87113 25.2403 6.87113 17.9699C6.84776 16.0894 7.54602 14.2715 8.82225 12.8902C8.24481 11.2534 8.31281 9.45799 9.01242 7.86954C9.01242 7.86954 10.6041 7.35796 14.2268 9.81125C17.3339 8.95927 20.613 8.95927 23.72 9.81125C27.3446 7.35606 28.9344 7.86954 28.9344 7.86954C29.6372 9.45725 29.7053 11.2539 29.1246 12.8902C30.4055 14.2713 31.1032 16.0939 31.0719 17.9775C31.0719 25.267 26.641 26.8683 22.4154 27.338C23.3269 28.27 23.7945 29.5484 23.6991 30.8487C23.6991 33.3856 23.6762 35.4319 23.6762 36.0538C23.6762 36.5616 24.0147 37.1511 24.9827 36.9648C33.8074 34.0197 39.1941 25.1091 37.7011 15.926C36.2083 6.74302 28.2766 -0.00212948 18.9734 5.04313e-07Z"/>
-                    </svg> 
+                    <svg height="32" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.9734 5.04313e-07C9.66837 -0.00119761 1.73623 6.74747 0.246435 15.9329C-1.24338 25.1184 4.14904 34.0284 12.9774 36.9686C13.9283 37.1397 14.2687 36.5559 14.2687 36.0538C14.2687 35.6031 14.2535 34.4088 14.2477 32.8208C8.97058 33.9619 7.8562 30.2762 7.8562 30.2762C7.50878 29.1295 6.76191 28.1449 5.75104 27.5015C4.03953 26.3243 5.88226 26.351 5.88226 26.351C7.1006 26.5179 8.17292 27.2401 8.78612 28.306C9.30515 29.2498 10.1796 29.9472 11.2151 30.2431C12.2507 30.5392 13.3616 30.4094 14.301 29.8826C14.3893 28.9203 14.8174 28.0209 15.5085 27.3456C11.2982 26.8683 6.87113 25.2403 6.87113 17.9699C6.84776 16.0894 7.54602 14.2715 8.82225 12.8902C8.24481 11.2534 8.31281 9.45799 9.01242 7.86954C9.01242 7.86954 10.6041 7.35796 14.2268 9.81125C17.3339 8.95927 20.613 8.95927 23.72 9.81125C27.3446 7.35606 28.9344 7.86954 28.9344 7.86954C29.6372 9.45725 29.7053 11.2539 29.1246 12.8902C30.4055 14.2713 31.1032 16.0939 31.0719 17.9775C31.0719 25.267 26.641 26.8683 22.4154 27.338C23.3269 28.27 23.7945 29.5484 23.6991 30.8487C23.6991 33.3856 23.6762 35.4319 23.6762 36.0538C23.6762 36.5616 24.0147 37.1511 24.9827 36.9648C33.8074 34.0197 39.1941 25.1091 37.7011 15.926C36.2083 6.74302 28.2766 -0.00212948 18.9734 5.04313e-07Z" />
+                    </svg>
                 </a>
                 <a href="https://gitlab.com/AlfredRoberts" target="_blank">
-                    <svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m31.937 18.115-1.787-5.511-3.552-10.921c-.183-.563-.973-.563-1.156 0l-3.552 10.916h-11.781l-3.552-10.916c-.183-.563-.979-.563-1.156 0l-3.552 10.916-1.792 5.516c-.161.5.021 1.052.443 1.364l15.5 11.261 15.5-11.261c.421-.312.604-.859.437-1.364z"/></svg>            
-                </a> 
+                    <svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m31.937 18.115-1.787-5.511-3.552-10.921c-.183-.563-.973-.563-1.156 0l-3.552 10.916h-11.781l-3.552-10.916c-.183-.563-.979-.563-1.156 0l-3.552 10.916-1.792 5.516c-.161.5.021 1.052.443 1.364l15.5 11.261 15.5-11.261c.421-.312.604-.859.437-1.364z" />
+                    </svg>
+                </a>
                 <a href="https://www.instagram.com/alfieroberts7/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
                 </a>
                 <a id="emailAnchor">
-                    <svg id="emailSvg" xmlns="http://www.w3.org/2000/svg" width="32"  height="32" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-                    <svg id="tickSvg" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="32"  height="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    <svg id="emailSvg" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                    </svg>
+                    <svg id="tickSvg" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                    </svg>
                     <div id="copyTooltip" data-tooltip="Copied!"></div>
                 </a>
             </div>
@@ -60,5 +77,6 @@
         <div id="blob"></div>
         <div id="blur"></div>
     </div>
-    </body>
+</body>
+
 </html>
